@@ -24,6 +24,9 @@ def wrangle_data():
 
     df = remove_nulls(df)
 
+    # dropping column with only one value, 0 for all observations
+    df = df.drop('readmission_status', axis=1)
+
     return prepped_df
 
 ############################################## Helper Functions ##############################################
@@ -70,6 +73,10 @@ def create_dummies(df):
 
     # converting icu stay types to corresponding values of 1, 2 and 3
     df.icu_stay_type = df.icu_stay_type.replace({'admit':1, 'transfer':2, 'readmit':3})
+
+    # converting ICU types to integers
+    df.icu_type = df.icu_type.replace({'Med-Surg ICU':1, 'CCU-CTICU':2, 'MICU':3,
+                                        'Neuro ICU':4, 'Cardiac ICU':5, 'SICU':6, 'CSICU':7, 'CTICU':8})
 
     return df
 
