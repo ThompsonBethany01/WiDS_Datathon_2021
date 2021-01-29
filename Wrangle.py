@@ -66,15 +66,20 @@ def create_dummies(df):
     Convert categorical string/object variables to numerical categories
     '''
 
-    # creating dummy variable for if patient is female
+    # Creating dummy variable for if patient is female
     df['is_female'] = df.gender.replace({'M':0, 'F':1})
 
-    # converting icu stay types to corresponding values of 1, 2 and 3
+    # Converting icu stay types to corresponding values of 1, 2 and 3
     df.icu_stay_type = df.icu_stay_type.replace({'admit':1, 'transfer':2, 'readmit':3})
 
-    # converting ICU types to integers
+    # Converting ICU types to integers
     df.icu_type = df.icu_type.replace({'Med-Surg ICU':1, 'CCU-CTICU':2, 'MICU':3,
                                         'Neuro ICU':4, 'Cardiac ICU':5, 'SICU':6, 'CSICU':7, 'CTICU':8})
+
+    # Creating three dummy variables from Hospital Admit Source
+    df['is_ER_admit'] = df.hospital_admit_source == 'Emergency Department'
+    df['is_OR_admit'] = df.hospital_admit_source == 'Operating Room'
+    df['is_Floor_admit'] = df.hospital_admit_source == 'Floor'
 
     return df
 
@@ -85,17 +90,17 @@ def remove_nulls(df):
     '''
 
     # Removing Nulls from Columns
-    # sets thresh hold to 75 percent nulls, if more than %25 nulls it will be removed
-    threshold = df.shape[0] * .50
+    # Sets thresh hold to 75 percent nulls, if more than %25 nulls it will be removed
+    threshold = df.shape[0] * .75
 
-    # remove columns with specified threshold
+    # Remove columns with specified threshold
     df_prepped = df.dropna(axis=1, thresh=threshold)
     
     # Removing Nulls from Rows
-    # sets thresh hold to 75 percent nulls, if more than %25 nulls it will be removed
+    # Sets thresh hold to 50 percent nulls, if more than %50 nulls it will be removed
     thresh_hold = df.shape[1] * .50
 
-    # remove rows with specified threshold
-    df_prepped = df.dropna(axis=0,thresh=thresh_hold)
+    # Remove rows with specified threshold
+    df_prepped = df_prepped.dropna(axis=0,thresh=thresh_hold)
 
     return df
