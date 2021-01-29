@@ -13,6 +13,8 @@ The primary goal of the project is to create a machine learning model to predict
 
 ## Data Dictionary
 There are categories 6 within the one dataset. I will list each data dictionary by these categories. First is patient identifiers and demographics listed below.
+<details>
+<summary> Demographics & Identifiers </summary>
 
 | Feature Name          | Description                                                                                                                                             | Data Type | Null % |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------|
@@ -33,7 +35,12 @@ There are categories 6 within the one dataset. I will list each data dictionary 
 | readmission_status    | Whether patient has been admitted to the unit previously, all values are 0                                                                              | integer   | 0      |
 | weight                | The weight (body mass) in kilograms                                                                                                                     | float     | 3      |
 
-Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic Health Evaluation II. A covariate is a dataset shift, the change in the distribution of the covariates.
+</details>
+
+Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic Health Evaluation II. A covariate is a dataset shift, the change in the distribution of the covariates.  
+
+<details>
+<summary> APACHE Covariates </summary>
 
 | Feature Name          | Description                                                                                                                                                                                                                                                                            | Data Type | Null % |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------|
@@ -66,11 +73,28 @@ Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic He
 | ventilated_apache     | Whether the patient was invasively ventilated at the time of the highest scoring arterial blood gas using the oxygenation scoring algorithm, including any mode of positive pressure ventilation delivered through a circuit attached to an endo-tracheal tube or tracheostomy. 0 or 1 | integer   | 0      |
 | wbc_apache            | White blood cell count measured during the first 24 hours in 10^9/L, results in the highest APACHE III score. Ranges from .9 - 45.8                                                                                                                                                    | float     | 23     |
 
+</details>
+
 Next category is patient vitals.
+
+<details>
+<summary> Patient Vitals </summary>
+  
+</details>
 
 Patient labs is a large majority of the dataset. There is a category for labs and labs blood gas.
 
+<details>
+<summary> Patient Labs </summary>
+  
+</details>
+
 The final category is APACHE comorbidities. This is an integer score from 0 to 71, with higher scores correlating with a higher risk of death.
+
+<details>
+<summary> APACHE Comorbidities </summary>
+  
+</details>
 
 ## Initial Thoughts & Hypotheses
 ### Thoughts
