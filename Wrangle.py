@@ -8,8 +8,6 @@ Functions to read data from a csv file to a pandas dataframe ready for the next 
 
 # import needed to run functions 
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 ############################################## Wrangle Function ##############################################
 
