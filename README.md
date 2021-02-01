@@ -75,10 +75,72 @@ Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic He
 
 </details>
 
-Next category is patient vitals.
+The next category in the data is patient vitals. Vital signs are measurements to assess the general health of the patient and can be used as possible diagnositic measures. All variables beginning with d1 are taken in the first 24 hours of their stay. All variables beginning with h1 are taken in the first hour of their stay.  
 
 <details>
 <summary> Patient Vitals </summary>
+  
+  **Day 1 Vitals**
+  
+  | Variable Name             | Description                                                                                                           | Data Type | Null % |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------|--------|
+| d1_diasbp_invasive_max    | Highest diastolic blood pressure in ml of mercury, invasively measured. Ranges from 37 - 181                          | integer   | 73     |
+| d1_diasbp_invasive_min    | Lowest diastolic blood pressure in ml of mercury, invasively measured. Ranges from 5 - 89                             | integer   | 73     |
+| d1_diasbp_max             | Highest diastolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 46 - 165 | integer   | 0      |
+| d1_diasbp_min             | Lowest diastolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 13 - 90   | integer   | 0      |
+| d1_diasbp_noninvasive_max | Highest diastolic blood pressure in ml of mercury, non-invasively measured. Ranges from 46 - 165                      | integer   | 1      |
+| d1_diasbp_noninvasive_min | Lowest diastolic blood pressure in ml of mercury, non-invasively measured. Ranges from 13 - 90                        | integer   | 1      |
+| d1_heartrate_max          | Highest heart rate in beats/minute. Ranges from 58 - 177                                                              | integer   | 0      |
+| d1_heartrate_min          | Lowest heart rate in beats/minute. Ranges from 0 - 175                                                                | integer   | 0      |
+| d1_mbp_invasive_max       | Highest mean blood pressure in ml of mercury, invasively measured. Ranges from 38 - 322                               | integer   | 73     |
+| d1_mbp_invasive_min       | Lowest mean blood pressure in ml of mercury, invasively measured. Ranges from 2 - 119                                 | integer   | 73     |
+| d1_mbp_max                | Highest mean blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 60 - 184      | integer   | 0      |
+| d1_mbp_min                | Lowest mean blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 22 - 112       | integer   | 0      |
+| d1_mbp_noninvasive_max    | Highest mean blood pressure in ml of mercury, non-invasively measured. Ranges from 60 - 181                           | integer   | 2      |
+| d1_mbp_noninvasive_min    | Lowest mean blood pressure in ml of mercury, non-invasively measured. Ranges from 22 - 112                            | integer   | 2      |
+| d1_resprate_max           | Highest respiratory rate in breaths/minute. Ranges from 14 - 92                                                       | integer   | 1      |
+| d1_resprate_min           | Lowest respiratory rate in breaths/minute. Ranges from 0 - 100                                                        | integer   | 1      |
+| d1_spo2_max               | Highest peripheral oxygen saturation as a %. Ranges from 0 - 100                                                      | integer   | 0      |
+| d1_spo2_min               | Lowest peripheral oxygen saturation as a %. Ranges from 0 - 100                                                       | integer   | 0      |
+| d1_sysbp_invasive_max     | Highest systolic blood pressure in ml of mercury, invasively measured. Ranges from 71 - 295                           | integer   | 73     |
+| d1_sysbp_invasive_min     | Lowest systolic blood pressure in ml of mercury, invasively measured. Ranges from 10 - 172                            | integer   | 73     |
+| d1_sysbp_max              | Highest systolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 90 - 232  | integer   | 0      |
+| d1_sysbp_min              | Lowest systolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 41 - 160   | integer   | 0      |
+| d1_sysbp_noninvasive_max  | Highest systolic blood pressure in ml of mercury, non-invasively measured. Ranges from 90 - 232                       | integer   | 1      |
+| d1_sysbp_noninvasive_min  | Lowest systolic blood pressure in ml of mercury, non-invasively measured. Ranges from 41 - 160                        | integer   | 1      |
+| d1_temp_max               | Highest core temperature in degrees Celsius, invasively measured. Ranges from 35 - 40                                 | integer   | 3      |
+| d1_temp_min               | Lowest core temperature in degrees Celsius. Ranges from 32 - 38                                                       | integer   | 3      |
+  
+  **Hour 1 Vitals**
+  
+  | Variable Name             | Description                                                                                                           | Data Type | Null % |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------|--------|
+|h1_diasbp_invasive_max    | Highest diastolic blood pressure in ml of mercury, invasively measured. Ranges from 33 - 135                          | integer   | 81     |
+| h1_diasbp_invasive_min    | Lowest diastolic blood pressure in ml of mercury, invasively measured. Ranges from 19 - 104                           | integer   | 81     |
+| h1_diasbp_max             | Highest diastolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 37 - 143 | integer   | 4      |
+| h1_diasbp_min             | Lowest diastolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 22 - 113  | integer   | 4      |
+| h1_diasbp_noninvasive_max | Highest diastolic blood pressure in ml of mercury, non-invasively measured. Ranges from 37 - 144                      | integer   | 9      |
+| h1_diasbp_noninvasive_min | Lowest diastolic blood pressure in ml of mercury, non-invasively measured. Ranges from 22 - 114                       | integer   | 9      |
+| h1_heartrate_max          | Highest heart rate in beats/minute. Ranges from 46 - 164                                                              | integer   | 3      |
+| h1_heartrate_min          | Lowest heart rate in beats/minute. Ranges from 36 - 144                                                               | integer   | 3      |
+| h1_mbp_invasive_max       | Highest mean blood pressure in ml of mercury, invasively measured. Ranges from 36 - 293                               | integer   | 80     |
+| h1_mbp_invasive_min       | Lowest mean blood pressure in ml of mercury, invasively measured. Ranges from 8 - 140                                 | integer   | 80     |
+| h1_mbp_max                | Highest mean blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 49 - 165      | integer   | 5      |
+| h1_mbp_min                | Lowest mean blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 32 - 138       | integer   | 5      |
+| h1_mbp_noninvasive_max    | Highest mean blood pressure in ml of mercury, non-invasively measured. Ranges from 49 - 163                           | integer   | 10     |
+| h1_mbp_noninvasive_min    | Lowest mean blood pressure in ml of mercury, non-invasively measured. Ranges from 32 - 138                            | integer   | 10     |
+| h1_resprate_max           | Highest respiratory rate in breaths/minute. Ranges from 10 - 59                                                       | integer   | 5      |
+| h1_resprate_min           | Lowest respiratory rate in breaths/minute. Ranges from 0 - 189                                                        | integer   | 5      |
+| h1_spo2_max               | Highest peripheral oxygen saturation as a %. Ranges from 0 - 100                                                      | integer   | 5      |
+| h1_spo2_min               | Lowest peripheral oxygen saturation as a %. Ranges from 0 - 100                                                       | integer   | 5      |
+| h1_sysbp_invasive_max     | Highest systolic blood pressure in ml of mercury, invasively measured. Ranges from 65 - 246                           | integer   | 81     |
+| h1_sysbp_invasive_min     | Lowest systolic blood pressure in ml of mercury, invasively measured. Ranges from 31 - 198                            | integer   | 81     |
+| h1_sysbp_max              | Highest systolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 75 - 223  | integer   | 4      |
+| h1_sysbp_min              | Lowest systolic blood pressure in ml of mercury, either non-invasively or invasively measured. Ranges from 53 - 194   | integer   | 4      |
+| h1_sysbp_noninvasive_max  | Highest systolic blood pressure in ml of mercury, non-invasively measured. Ranges from 75 - 223                       | integer   | 9      |
+| h1_sysbp_noninvasive_min  | Lowest systolic blood pressure in ml of mercury, non-invasively measured. Ranges from 53 - 195                        | integer   | 9      |
+| h1_temp_max               | Highest core temperature in degrees Celsius, invasively measured. Ranges from 33 - 40                                 | integer   | 23     |
+| h1_temp_min               | Lowest core temperature in degrees Celsius. Ranges from 33 - 39                                                       | integer   | 23     |
   
 </details>
 
