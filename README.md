@@ -12,7 +12,7 @@ The primary goal of the project is to create a machine learning model to predict
 ### Acknowledgments
 
 ## Data Dictionary
-There are categories 6 within the one dataset. I will list each data dictionary by these categories. First is patient identifiers and demographics listed below.
+#### There are categories 6 within the one dataset. I will list each data dictionary by these categories. First is patient identifiers and demographics listed below.
 <details>
 <summary> Demographics & Identifiers </summary>
 
@@ -37,7 +37,7 @@ There are categories 6 within the one dataset. I will list each data dictionary 
 
 </details>
 
-Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic Health Evaluation II. A covariate is a dataset shift, the change in the distribution of the covariates.  
+#### Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic Health Evaluation II. A covariate is a dataset shift, the change in the distribution of the covariates.  
 
 <details>
 <summary> APACHE Covariates </summary>
@@ -75,7 +75,7 @@ Next category is APACHE covariate. APACHE is the Acute Physiology And Chronic He
 
 </details>
 
-The next category in the data is patient vitals. Vital signs are measurements to assess the general health of the patient and can be used as possible diagnositic measures. All variables beginning with d1 are taken in the first 24 hours of their stay. All variables beginning with h1 are taken in the first hour of their stay.  
+#### The next category in the data is patient vitals. Vital signs are measurements to assess the general health of the patient and can be used as possible diagnositic measures. All variables beginning with d1 are taken in the first 24 hours of their stay. All variables beginning with h1 are taken in the first hour of their stay.  
 
 <details>
 <summary> Patient Vitals </summary>
@@ -144,14 +144,14 @@ The next category in the data is patient vitals. Vital signs are measurements to
   
 </details>
 
-Patient labs is a large majority of the dataset. There is a category for labs and labs blood gas.
+#### Patient labs is a large majority of the dataset. There is a category for labs and labs blood gas.
 
 <details>
 <summary> Patient Labs </summary>
   
 </details>
 
-The final category is APACHE comorbidities. This is an integer score from 0 to 71, with higher scores correlating with a higher risk of death.
+#### The final category is APACHE comorbidities. This is an integer score from 0 to 71, with higher scores correlating with a higher risk of death.
 
 <details>
 <summary> APACHE Comorbidities </summary>
