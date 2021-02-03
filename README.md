@@ -149,6 +149,102 @@ The primary goal of the project is to create a machine learning model to predict
 <details>
 <summary> Patient Labs </summary>
   
+   **Day 1 Labs**
+   
+   | Variable Name        | Description                                                                                                          | Data Type | Null % |
+|----------------------|----------------------------------------------------------------------------------------------------------------------|-----------|--------|
+| d1_albumin_max       | The lowest albumin concentration of the patient in their serum in g/L. Ranges from 1 - 5                             | Float     | 55     |
+| d1_albumin_min       | The lowest albumin concentration of the patient in their serum in g/L. Ranges from 1 - 4                             | Float     | 55     |
+| d1_bilirubin_max     | The highest bilirubin concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 60        | Float     | 59     |
+| d1_bilirubin_min     | The lowest bilirubin concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 58         | Float     | 59     |
+| d1_bun_max           | The highest blood urea nitrogen concentration of the patient in their serum or plasma in mmol/L. Ranges from 4 - 126 | Float     | 11     |
+| d1_bun_min           | The lowest blood urea nitrogen concentration of the patient in their serum or plasma in mmol/L. Ranges from 3 - 113  | Float     | 11     |
+| d1_calcium_max       | The highest calcium concentration of the patient in their serum in mmol/L. Ranges from 6 - 11                        | Float     | 13     |
+| d1_calcium_min       | The lowest calcium concentration of the patient in their serum in mmol/L. Ranges from 6 - 10                         | Float     | 13     |
+| d1_creatinine_max    | The highest creatinine concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 11       | Float     | 10     |
+| d1_creatinine_min    | The lowest creatinine concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 10        | Float     | 10     |
+| d1_glucose_max       | The highest glucose concentration of the patient in their serum or plasma in mmol/L. Ranges from 73 - 611            | Integer   | 6      |
+| d1_glucose_min       | The lowest glucose concentration of the patient in their serum or plasma in mmol/L. Ranges from 33 - 288             | Integer   | 6      |
+| d1_hco3_max          | The highest bicarbonate concentration for the patient in their serum or plasma in mmol/L. Ranges from 12 - 40        | Float     | 15     |
+| d1_hco3_min          | The lowest bicarbonate concentration for the patient in their serum or plasma in mmol/L. Ranges from 7 - 39          | Float     | 15     |
+| d1_hemaglobin_max    | The highest hemoglobin concentration for the patient in g/dL. Ranges from 7 - 17                                     | Float     | 12     |
+| d1_hemaglobin_min    | The lowest hemoglobin concentration for the patient in g/dL. Ranges from 7 - 17                                      | Float     | 12     |
+| d1_hematocrit_max    | The highest volume proportion of red blood cells in a patient's blood, expressed as a fraction. Ranges from 20 - 52  | Float     | 12     |
+| d1_hematocrit_min    | The lowest volume proportion of red blood cells in a patient's blood, expressed as a fraction. Ranges from 16 - 50   | Float     | 12     |
+| d1_inr_max           | The highest international normalized ratio for the patient in micromol/L. Ranges from 1 - 8                          | Float     | 62     |
+| d1_inr_min           | The lowest international normalized ratio for the patient in micromol/L. Ranges from 1 - 6                           | Float     | 62     |
+| d1_lactate_max       | The highest lactate concentration for the patient in their serum or plasma in mmol/L. Ranges from 0 - 20             | Float     | 73     |
+| d1_lactate_min       | The lowest lactate concentration for the patient in their serum or plasma in mmol/L. Ranges from 0 - 15              | Float     | 73     |
+| d1_platelets_max     | The highest platelet count for the patient in 10^9/L. Ranges from 27 - 585                                           | Integer   | 14     |
+| d1_platelets_min     | The lowest platelet count for the patient in 10^9/L. Ranges from 19 - 557                                            | Integer   | 14     |
+| d1_potassium_max     | The highest potassium concentration for the patient in their serum or plasma in mmol/L. Ranges from 3 - 7            | Float     | 10     |
+| d1_potassium_min     | The lowest potassium concentration for the patient in their serum or plasma in mmol/L. Ranges from 2 - 6             | Float     | 10     |
+| d1_sodium_max        | The highest sodium concentration for the patient in their serum or plasma in mmol/L. Ranges from 123 - 158           | Float     | 10     |
+| d1_sodium_min        | The lowest sodium concentration for the patient in their serum or plasma in mmol/L. Ranges from 117 - 153            | Float     | 10     |
+| d1_wbc_max           | The highest white blood cell count for the patient in 10^9/L. Ranges from 1 - 46                                     | Float     | 13     |
+| d1_wbc_min           | The lowest white blood cell count for the patient in 10^9/L. Ranges from 1 - 41                                      | Float     | 13     |
+   
+   **Hour 1 Labs**
+   
+   | Variable Name        | Description                                                                                                          | Data Type | Null % |
+|----------------------|----------------------------------------------------------------------------------------------------------------------|-----------|--------|
+| h1_albumin_max       | The lowest albumin concentration of the patient in their serum in g/L. Ranges from 1 - 5                             | Float     | 91     |
+| h1_albumin_min       | The lowest albumin concentration of the patient in their serum in g/L. Ranges from 1 - 5                             | Float     | 91     |
+| h1_bilirubin_max     | The highest bilirubin concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 58        | Float     | 92     |
+| h1_bilirubin_min     | The lowest bilirubin concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 58         | Float     | 92     |
+| h1_bun_max           | The highest blood urea nitrogen concentration of the patient in their serum or plasma in mmol/L. Ranges from 4 - 135 | Float     | 81     |
+| h1_bun_min           | The lowest blood urea nitrogen concentration of the patient in their serum or plasma in mmol/L. Ranges from 4 - 135  | Float     | 81     |
+| h1_calcium_max       | The highest calcium concentration of the patient in their serum in mmol/L. Ranges from 6 - 11                        | Float     | 81     |
+| h1_calcium_min       | The lowest calcium concentration of the patient in their serum in mmol/L. Ranges from 5 - 11                         | Float     | 81     |
+| h1_creatinine_max    | The highest creatinine concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 12       | Float     | 81     |
+| h1_creatinine_min    | The lowest creatinine concentration of the patient in their serum or plasma in micromol/L. Ranges from 0 - 12        | Float     | 81     |
+| h1_glucose_max       | The highest glucose concentration of the patient in their serum or plasma in mmol/L. Ranges from 59 - 695            | Integer   | 58     |
+| h1_glucose_min       | The lowest glucose concentration of the patient in their serum or plasma in mmol/L. Ranges from 42 - 670             | Integer   | 58     |
+| h1_hco3_max          | The highest bicarbonate concentration for the patient in their serum or plasma in mmol/L. Ranges from 6 - 39         | Float     | 82     |
+| h1_hco3_min          | The lowest bicarbonate concentration for the patient in their serum or plasma in mmol/L. Ranges from 6 - 39          | Float     | 82     |
+| h1_hemaglobin_max    | The highest hemoglobin concentration for the patient in g/dL 5 - 17                                                  | Float     | 79     |
+| h1_hemaglobin_min    | The lowest hemoglobin concentration for the patient in g/dL. Ranges from 5 - 17                                      | Float     | 79     |
+| h1_hematocrit_max    | The highest volume proportion of red blood cells in a patient's blood, expressed as a fraction. Ranges from 16 - 52  | Float     | 79     |
+| h1_hematocrit_min    | The lowest volume proportion of red blood cells in a patient's blood, expressed as a fraction. Ranges from 16 - 52   | Float     | 79     |
+| h1_inr_max           | The highest international normalized ratio for the patient in micromol/L. Ranges from 1 - 8                          | Float     | 62     |
+| h1_inr_min           | The lowest international normalized ratio for the patient in micromol/L. Ranges from 1 - 6                           | Float     | 62     |
+| h1_lactate_max       | The highest lactate concentration for the patient in their serum or plasma in mmol/L. Ranges from 0 - 18             | Float     | 91     |
+| h1_lactate_min       | The lowest lactate concentration for the patient in their serum or plasma in mmol/L. Ranges from 0 - 18              | Float     | 91     |
+| h1_platelets_max     | The highest platelet count for the patient in 10^9/L. Ranges from 20 - 585                                           | Integer   | 81     |
+| h1_platelets_min     | The lowest platelet count for the patient in 10^9/L. Ranges from 20 - 585                                            | Integer   | 81     |
+| h1_potassium_max     | The highest potassium concentration for the patient in their serum or plasma in mmol/L. Ranges from 2 - 7            | Float     | 77     |
+| h1_potassium_min     | The lowest potassium concentration for the patient in their serum or plasma in mmol/L. Ranges from 2 - 7             | Float     | 77     |
+| h1_sodium_max        | The highest sodium concentration for the patient in their serum or plasma in mmol/L. Ranges from 114 - 157           | Float     | 78     |
+| h1_sodium_min        | The lowest sodium concentration for the patient in their serum or plasma in mmol/L. Ranges from 114 - 157            | Float     | 78     |
+| h1_wbc_max           | The highest white blood cell count for the patient in 10^9/L. Ranges from 1 - 44                                     | Float     | 81     |
+| h1_wbc_min           | The lowest white blood cell count for the patient in 10^9/L. Ranges from 1 - 44                                      | Float     | 81     |
+   
+   **Day 1 Blood Labs**
+   
+   | Variable Name        | Description                                                                                                          | Data Type | Null % |
+|----------------------|----------------------------------------------------------------------------------------------------------------------|-----------|--------|
+| d1_arterial_pco2_max | The highest arterial partial pressure of carbon dioxide for the patient in ml of mercury. Ranges from 18 - 111       | Float     | 65     |
+| d1_arterial_pco2_min | The lowest arterial partial pressure of carbon dioxide for the patient in ml of mercury. Ranges from 15 - 86         | Float     | 65     |
+| d1_arterial_ph_max   | The highest arterial pH for the patient. Ranges from 7 - 8                                                           | Float     | 65     |
+| d1_arterial_ph_min   | The lowest arterial pH for the patient. Ranges from 7 - 8                                                            | Float     | 65     |
+| d1_arterial_po2_max  | The highest arterial partial pressure of oxygen for the patient in ml of mercury. Ranges from 39 - 541               | Float     | 65     |
+| d1_arterial_po2_min  | The lowest arterial partial pressure of oxygen for the patient in ml of mercury. Ranges from 28 - 449                | Float     | 65     |
+| d1_pao2fio2ratio_max | The highest fraction of inspired oxygen for the patient. Ranges from 55 - 835                                        | Float     | 72     |
+| d1_pao2fio2ratio_min | The lowest fraction of inspired oxygen for the patient. Ranges from 36 - 604                                         | Float     | 72     |
+   
+   **Hour 1 Blood Labs**
+   | Variable Name        | Description                                                                                                          | Data Type | Null % |
+|----------------------|----------------------------------------------------------------------------------------------------------------------|-----------|--------|
+| h1_arterial_pco2_max | The highest arterial partial pressure of carbon dioxide for the patient in ml of mercury. Ranges from 15 - 112       | Float     | 83     |
+| h1_arterial_pco2_min | The lowest arterial partial pressure of carbon dioxide for the patient in ml of mercury. Ranges from 15 - 107        | Float     | 83     |
+| h1_arterial_ph_max   | The highest arterial pH for the patient. Ranges from 7 - 8                                                           | Float     | 83     |
+| h1_arterial_ph_min   | The lowest arterial pH for the patient. Ranges from 7 - 8                                                            | Float     | 83     |
+| h1_arterial_po2_max  | The highest arterial partial pressure of oxygen for the patient in ml of mercury. Ranges from 34 - 535               | Float     | 83     |
+| h1_arterial_po2_min  | The lowest arterial partial pressure of oxygen for the patient in ml of mercury 31 - 515                             | Float     | 83     |
+| h1_pao2fio2ratio_max | The highest fraction of inspired oxygen for the patient. Ranges from 42 - 720                                        | Float     | 87     |
+| h1_pao2fio2ratio_min | The lowest fraction of inspired oxygen for the patient. Ranges from 38 - 655                                         | Float     | 87     |
+   
+   
 </details>
 
 #### The final category is APACHE comorbidities. This is an integer score from 0 to 71, with higher scores correlating with a higher risk of death.
