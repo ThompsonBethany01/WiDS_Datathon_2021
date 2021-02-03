@@ -12,7 +12,9 @@ The primary goal of the project is to create a machine learning model to predict
 ### Acknowledgments
 
 ## Data Dictionary
-#### There are categories 6 within the one dataset. I will list each data dictionary by these categories. First is patient identifiers and demographics listed below.
+The target variable in the data set is the variable diabetes_mellitus - a 1 representing the patient being diagnosed with the crhonic disease, and 0 for no diagnosis of it. There are 180 additional features in the original dataset, categorized by the 6 labels below.  
+
+#### First category of features is patient identifiers and demographics listed below.
 <details>
 <summary> Demographics & Identifiers </summary>
 
@@ -251,6 +253,16 @@ The primary goal of the project is to create a machine learning model to predict
 
 <details>
 <summary> APACHE Comorbidities </summary>
+  
+  | Variable Name               | Description                                                                                                                                                                                                                                                                                                             | Data Type  | Null % |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------|
+| aids                        | Whether the patient has a definitive diagnosis of acquired immune deficiency syndrome (AIDS) (not HIV positive alone)                                                                                                                                                                                                   | Binary Int | 0      |
+| cirrhosis                   | Whether the patient has a history of heavy alcohol use with portal hypertension and varices, other causes of cirrhosis with evidence of portal hypertension and varices, or biopsy proven cirrhosis. This comorbidity does not apply to patients with a functioning liver transplant.                                   | Binary Int | 0      |
+| hepatic_failure             | Whether the patient has cirrhosis and additional complications including jaundice and ascites, upper GI bleeding, hepatic encephalopathy, or coma.                                                                                                                                                                      | Binary Int | 0      |
+| immunosuppression           | Whether the patient has their immune system suppressed within six months prior to ICU admission for any of the following reasons; radiation therapy, chemotherapy, use of non-cytotoxic immunosuppressive drugs, high dose steroids (at least 0.3 mg/kg/day of methylprednisolone or equivalent for at least 6 months). | Binary Int | 0      |
+| leukemia                    | Whether the patient has been diagnosed with acute or chronic myelogenous leukemia, acute or chronic lymphocytic leukemia, or multiple myeloma.                                                                                                                                                                          | Binary Int | 0      |
+| lymphoma                    | Whether the patient has been diagnosed with non-Hodgkin lymphoma.                                                                                                                                                                                                                                                       | Binary Int | 0      |
+| solid_tumor_with_metastasis | Whether the patient has been diagnosed with any solid tumor carcinoma (including malignant melanoma) which has evidence of metastasis.                                                                                                                                                                                  | Binary Int | 0      |
   
 </details>
 
