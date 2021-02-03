@@ -249,7 +249,7 @@ The target variable in the data set is the variable diabetes_mellitus - a 1 repr
    
 </details>
 
-#### The final category is APACHE comorbidities. This is an integer score from 0 to 71, with higher scores correlating with a higher risk of death.
+#### The final category is APACHE comorbidities. These are all binary integers representing if the patient has the corresponding disease or not.
 
 <details>
 <summary> APACHE Comorbidities </summary>
