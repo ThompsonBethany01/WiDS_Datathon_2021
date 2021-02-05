@@ -1,9 +1,13 @@
 # Women in Data Science (WiDS) Datathon 2021
+![repo-header](https://github.com/ThompsonBethany01/WiDS_Datathon_2021/blob/main/images/header.png?raw=true)
 ## About the Project
 ### Goals
 The primary goal of the project is to create a machine learning model to predict a patient's diagnosis of diabetes. The data is focused on patients staying in an Intensive Care Unit (ICU) because ICU's often lack verified medical histories for new patients. The patient may not be coherent enough to give information on their medical history and it can take time for the ICU to recieve their records - time the patient might not have. Knowing if the patient has diabetes sooner can improve the patient's outcome by allowing the ICU to make adjustments to their care based on this knowledge.
 
 ### Background
+Diabetes is a chronic health condition that causes elevated blood sugar levels when not in control by necessary medications and/or healthy lifestyle habits. Prolonged high blood sugars can cause additional health problems, such as vision loss and heart disease. In addition, acute extreme low or high blood sugars can cause the patient to have siezures or become comatose. The sooner a patient can recieve the needed medication, the lower the risk of these complications and better chance at recovery.  
+
+Read more about diabetes [here](https://www.cdc.gov/diabetes/basics/diabetes.html) from the CDC.
 
 ### Project Outline
 
